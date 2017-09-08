@@ -1,6 +1,7 @@
 package org.launchcode;
 
 import org.launchcode.comparators.NameComparator;
+import org.launchcode.comparators.PopulationComparator;
 import org.launchcode.comparators.StateComparator;
 
 import java.util.ArrayList;
@@ -15,9 +16,11 @@ public class Main {
 //        NameComparator comparator = new NameComparator();
 //        cities.sort(comparator);
 
-        StateComparator comparator2 = new StateComparator();
-        cities.sort(comparator2);
+//        StateComparator comparator2 = new StateComparator();
+//        cities.sort(comparator2);
 
+        PopulationComparator comparator3 = new PopulationComparator();
+        cities.sort(comparator3);
 
         printCities(cities);
 
